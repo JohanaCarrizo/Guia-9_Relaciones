@@ -47,27 +47,32 @@ public class Vista {
     public void iniciarAdopcion(){
 
         iniciarRepositorio();
-
+        boolean bandera = true;
             ArrayList<Persona> people = adopcion.retornarAdopcion();
 
             for (Persona persona: people) {
+
+                do {
 
                 System.out.println("Hola " + persona.getNombre());
                 System.out.println("Por favor, ingrese el nombre del perro a adoptar");
                 String nombre = leer.next();
                 Perro perro = adopcion.buscarPerro(nombre);
 
-                if (perro.getAdoptado()) {
+                    if (!perro.getAdoptado()) {
 
-                    System.out.println("Este perrito ya fue adoptado");
-                    continue;
+                        persona.setPerros(perro);
+                        perro.setAdoptado(true);
+                        System.out.println("Muchas gracias por su adopcion *.*/ \n");
+                        bandera = false;
 
-                } else {
-                    persona.setPerros(perro);
-                    perro.setAdoptado(true);
-                    System.out.println("Muchas gracias por su adopcion *.*/ \n");
-                    continue;
-                }
+                    }else{
+
+                        System.out.println("Lo sentimos, este perrito ya fue adoptado. Deseas adoptar otro?. y/n");
+                        bandera = leer.next().equalsIgnoreCase("y") ? true : false;
+                    }
+
+                }while(bandera);
             }
 
             mostrarAdopciones(people);
