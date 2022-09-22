@@ -21,7 +21,9 @@ public class Adopcion {
 
         for (Persona p: adopciones) {
 
-            System.out.println(p.getNombre()+" adoptó a "+p.getPerro().getNombre()+" un perro de tamaño "+p.getPerro().getTamanio());
+            System.out.println(p.getNombre()+" adoptó a "+p.getPerro().getNombre()+
+                               " un perro de tamaño "
+                               +p.getPerro().getTamanio());
 
         }
     }

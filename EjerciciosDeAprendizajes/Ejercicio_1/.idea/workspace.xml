@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b249ce94-8255-4b1e-aee2-9cb0bb7d5c5f" name="Changes" comment="Primer ejercicio con Intellij" />
+    <list default="true" id="b249ce94-8255-4b1e-aee2-9cb0bb7d5c5f" name="Changes" comment="Primer ejercicio con Intellij">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controlador/Adopcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controlador/Adopcion.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +26,15 @@
         <option name="title" value="All" />
       </GitPushTagMode>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="3544d43f-5745-40e6-8431-4272a927a40d" />
+        <option name="url" value="https://github.com/JohanaCarrizo/Guia-9_Relaciones.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -41,7 +53,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "preferences.editor"
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
   <component name="RunManager">
@@ -66,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663771360849</updated>
-      <workItem from="1663771382551" duration="5614000" />
+      <workItem from="1663771382551" duration="7577000" />
     </task>
     <task id="LOCAL-00001" summary="Primer ejercicio con Intellij">
       <created>1663781982134</created>
@@ -93,6 +105,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
     <MESSAGE value="Primer ejercicio con Intellij" />
     <option name="LAST_COMMIT_MESSAGE" value="Primer ejercicio con Intellij" />
   </component>
