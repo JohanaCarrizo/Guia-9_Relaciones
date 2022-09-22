@@ -6,6 +6,7 @@ import Modelo.Persona;
 import Modelo.Tamanio;
 
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Vista {
@@ -70,9 +71,11 @@ public class Vista {
 
                         System.out.println("Lo sentimos, este perrito ya fue adoptado. Deseas adoptar otro?. y/n");
                         bandera = leer.next().equalsIgnoreCase("y") ? true : false;
+
                     }
 
                 }while(bandera);
+
             }
 
             mostrarAdopciones(people);
@@ -82,7 +85,9 @@ public class Vista {
 
         for (Persona people: personas) {
 
-            people.mostrarInformacion();
+            if(people.getPerros() != null) {
+                people.mostrarInformacion();
+            }
 
         }
     }

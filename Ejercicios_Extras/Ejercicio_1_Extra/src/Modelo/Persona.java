@@ -59,6 +59,7 @@ public class Persona {
 
     public void mostrarInformacion(){
 
-        System.out.println(nombre+" adoptó a "+ perro.getNombre());
+        System.out.println(nombre + " adoptó a " + perro.getNombre());
+
     }
 }

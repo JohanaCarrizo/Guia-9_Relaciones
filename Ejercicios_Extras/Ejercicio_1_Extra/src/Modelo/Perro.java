@@ -9,8 +9,18 @@ public class Perro {
     private int edad;
     private Tamanio tamanio;
     private boolean adoptado;
+    private Perro perro;
 
     private ArrayList<Persona> personas;
+
+    public Perro() {
+    }
+
+    public static Perro getPerro() {
+
+        return new Perro();
+
+    }
 
     public Perro(String nombre, String raza, int edad, Tamanio tamanio){
 
