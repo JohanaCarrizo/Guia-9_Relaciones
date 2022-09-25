@@ -1,6 +1,7 @@
 import modelo.Juego;
 import modelo.Jugador;
 import modelo.Revolver;
+import vista.View;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -9,7 +10,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Scanner leer = new Scanner(System.in);
+        View view = View.getView();
+        view.iniciarJuego();
+
+        /*Scanner leer = new Scanner(System.in);
         ArrayList<Jugador> aux = new ArrayList<Jugador>();
         Revolver revolver = new Revolver();
         Juego juego = new Juego();
@@ -23,7 +27,6 @@ public class Main {
 
                 Jugador jugador = new Jugador("Jugador");
                 aux.add(jugador);
-
             }
         }else{
 
@@ -37,10 +40,7 @@ public class Main {
         for (Jugador j: juego.getJugadores()) {
 
             System.out.println(j.getInformacion());
-
         }
-
-        juego.Ronda();
-
+        juego.Ronda();*/
     }
 }

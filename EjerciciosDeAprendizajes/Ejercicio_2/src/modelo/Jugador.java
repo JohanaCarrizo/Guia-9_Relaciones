@@ -22,7 +22,7 @@ public class Jugador {
          return nombre+" "+id;
     }
 
-    public Jugador crearJugadores(int cantJugadores){
+    public static Jugador crearJugadores(){
 
         return new Jugador("Jugador");
     }

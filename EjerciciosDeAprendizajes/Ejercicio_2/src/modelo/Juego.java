@@ -18,7 +18,6 @@ public class Juego {
 
     public void Ronda(){
 
-        int intento= 1;
         boolean bandera = true;
 
         while(bandera) {

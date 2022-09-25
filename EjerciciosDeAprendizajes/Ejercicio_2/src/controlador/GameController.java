@@ -9,13 +9,10 @@ import java.util.ArrayList;
 public class GameController {
 
     Juego juego = new Juego();
-
     Revolver revolver = new Revolver();
     ArrayList<Jugador> aux = new ArrayList<Jugador>();
 
-    public void iniciarJuego(){
-
-    }
+    public void iniciarJuego(){}
 
     public boolean evaluarCantDeJugadores(int cantJugadores){
 
@@ -26,9 +23,27 @@ public class GameController {
 
         for (int i = 0; i < cantJugadores; i++) {
 
-            juego.agregarJugador(new Jugador("Jugador"));
-
+            aux.add(Jugador.crearJugadores());
         }
     }
 
+    public void llenarRevolver(){
+
+        revolver.llenarRevolver();
+    }
+
+    public void llenarJuego(){
+
+        juego.llenarJuego(revolver, aux);
+    }
+
+    public void ronda(){
+
+        juego.Ronda();
+    }
+
+    public void visualizarTambor(){
+
+        System.out.println(revolver);
+    }
 }

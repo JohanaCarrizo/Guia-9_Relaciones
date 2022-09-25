@@ -16,7 +16,7 @@ public class View {
         this.gc = new GameController();
     }
 
-    public View getView(){
+    public static View getView(){
 
         return view;
     }
@@ -35,7 +35,10 @@ public class View {
             gc.crearJugadores(cantJugador);
         }
 
-
+        gc.llenarJuego();
+        gc.llenarRevolver();
+        gc.visualizarTambor();
+        gc.ronda();
     }
 
 }
