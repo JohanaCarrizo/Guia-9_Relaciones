@@ -29,16 +29,30 @@ public class View {
         if(gc.evaluarCantDeJugadores(cantJugador)){
 
             System.out.println("Cantidad de jugadores por defecto (6)");
-            gc.crearJugadores(6);
+            pedirNombres(6);
+
         }else{
 
-            gc.crearJugadores(cantJugador);
+            pedirNombres(cantJugador);
         }
 
         gc.llenarJuego();
         gc.llenarRevolver();
+        System.out.println("******************************************************");
         gc.visualizarTambor();
+        System.out.println("******************************************************");
         gc.ronda();
+    }
+
+    public void pedirNombres(int cantJugador){
+
+        for (int i = 0; i < cantJugador; i++) {
+
+            System.out.print("Ingrese el nombre del jugador "+(i+1)+" --> ");
+            String nombre = leer.next();
+            gc.crearJugadores(nombre);
+
+        }
     }
 
 }

@@ -17,14 +17,19 @@ public class Jugador {
         this.mojado = false;
     }
 
-    public String getInformacion(){
-
-         return nombre+" "+id;
+    public boolean getMojado() {
+        return mojado;
     }
 
-    public static Jugador crearJugadores(){
+    public String getInformacion(){
 
-        return new Jugador("Jugador");
+        return nombre;
+        // return nombre+" "+id;
+    }
+
+    public static Jugador crearJugadores(String nombre){
+
+        return new Jugador(nombre);
     }
 
     public boolean disparar(Revolver revolver) {

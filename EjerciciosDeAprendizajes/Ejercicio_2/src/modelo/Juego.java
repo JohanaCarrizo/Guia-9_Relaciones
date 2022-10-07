@@ -2,11 +2,14 @@ package modelo;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class Juego {
 
     private ArrayList<Jugador> jugadores;
     private Revolver revolver;
+
 
     public Juego() {}
 
@@ -26,16 +29,18 @@ public class Juego {
 
                 if (jugador.disparar(revolver)) {
 
-                    System.out.print("Fin del juego. Jugador mojado --> " + jugador.getInformacion());
+                    System.out.print("\nFin del juego. Jugador mojado --> " + jugador.getInformacion());
                     bandera = false;
                     return;
 
                 } else {
 
-                    System.out.println("Jugador a salvo. Siguiente...");
+                    System.out.println("\nJugador a salvo. Siguiente...\n");
+
                 }
             }
         }
+
     }
 
     public void agregarJugador(Jugador jugador){
@@ -48,3 +53,4 @@ public class Juego {
         return jugadores;
     }
 }
+

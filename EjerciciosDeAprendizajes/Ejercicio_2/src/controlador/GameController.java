@@ -19,12 +19,10 @@ public class GameController {
         return cantJugadores < 0 || cantJugadores > 6;
     }
 
-    public void crearJugadores(int cantJugadores){
+    public void crearJugadores(String nombre){
 
-        for (int i = 0; i < cantJugadores; i++) {
+        aux.add(Jugador.crearJugadores(nombre));
 
-            aux.add(Jugador.crearJugadores());
-        }
     }
 
     public void llenarRevolver(){

@@ -30,10 +30,6 @@ public class Revolver {
         }
     }
 
-    public void tambor(){
-        System.out.println("Posicion actual: "+posicionActual+" y Posicion del agua: "+posicionAgua);
-    }
-
     public static int getPosicionAleatorio(int min, int max){
         int x = (int)(Math.random()*((max-min)+1))+min;
         return x;
